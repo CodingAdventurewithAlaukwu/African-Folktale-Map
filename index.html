@@ -161,9 +161,9 @@ attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreet
 
             // Bind a popup to each icon based on the same properties
             // Adds coloumns of extra info to marker popup
-            marker.bindPopup(marker.toGeoJSON().properties.timePeriod +
-                marker.toGeoJSON().properties.siteName + '<br><br> ' +
-                marker.toGeoJSON().properties.info + '<br><br> ' +
+            marker.bindPopup(marker.toGeoJSON().properties.Location +
+                marker.toGeoJSON().properties.Title + '<br><br> ' +
+               //marker.toGeoJSON().properties.info + '<br><br> ' +
                 marker.toGeoJSON().properties.link, {autoPanPadding: [5,55]});
         });
     })
